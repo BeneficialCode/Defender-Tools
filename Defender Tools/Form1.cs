@@ -36,9 +36,9 @@ namespace Defender_Tools
                 base.Close();
                 this.button1.Enabled = true;
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("出现了一些问题~", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("出现了一些问题~"+ex.Message, "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.button1.Enabled = true;
             }
         }
@@ -61,9 +61,9 @@ namespace Defender_Tools
                 base.Close();
                 this.button2.Enabled = true;
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("出现了一些问题~", "提示");
+                MessageBox.Show("出现了一些问题~"+ex.Message, "提示");
                 this.button2.Enabled = true;
             }
         }
